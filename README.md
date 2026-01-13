@@ -77,3 +77,8 @@ We leverage **K‑fold cross‑validation** to generate out‑of‑fold predicti
        - Train `m` on `X_train`  
        - Predict `ŷ = m(X_test)`  
        - Evaluate performance
+
+##  BibTeX Citation
+```bibtex
+
+
