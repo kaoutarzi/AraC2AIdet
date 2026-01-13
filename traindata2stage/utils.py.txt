@@ -1,0 +1,9 @@
+from transformers import AutoTokenizer
+
+def tokenize_fn(tokenizer, batch):
+    return tokenizer(
+        batch["text"],
+        padding="max_length",
+        truncation=True,
+        max_length=128
+    )
