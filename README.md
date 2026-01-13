@@ -1,16 +1,21 @@
 # AraC2AIdet
 
-
 ## Overview
 
-This algorithm implements a **cross-domain stacked ensemble framework** for detecting AI-generated text in Arabic datasets.  
-It combines multiple **pretrained base models** (AraBERT, AraELECTRA, DeBERTa, XLM-RoBERTa) and uses **meta-learners** (Logistic Regression, SVM, Random Forest, XGBoost) to improve detection performance across different domains.  
+This repository implements a **Cross‑Domain Stacked Ensemble Framework for AI‑Generated Text Detection** in Arabic. The goal is to build robust detection models that generalize across different domains of text, using ensembles of multiple base models and meta‑learners.
 
-The framework supports two directions:  
-1. **Social → Abstracts**: Train on social media data and test on academic abstracts.  
-2. **Abstracts → Social**: Train on academic abstracts and test on social media data.  
+We evaluate cross‑domain performance using two public Arabic datasets from Hugging Face:
 
-By leveraging **K-fold cross-validation** and out-of-fold predictions from base models, the ensemble reduces overfitting and enhances generalization to unseen datasets.
+- **Arabic Generated Abstracts** — a dataset of academic abstracts with both human and LLM‑generated versions, created as part of the research on stylometric analysis in Arabic text generation. :contentReference[oaicite:0]{index=0}  
+- **Arabic Generated Social Media Posts** — a dataset of social media posts and their polished/generated counterparts from multiple LLMs, designed to support detection and analysis of machine‑generated informal Arabic text. :contentReference[oaicite:1]{index=1}
+
+The framework works in two directions:
+
+1. **Social → Abstracts**: Train the ensemble on social media text and test on academic abstracts.  
+2. **Abstracts → Social**: Train on academic abstracts and test on social media posts.
+
+We leverage **K‑fold cross‑validation** to generate out‑of‑fold predictions from base models (AraBERT, AraELECTRA, DeBERTa, XLM‑RoBERTa) and then train multiple **meta‑learners** (Logistic Regression, SVM, Random Forest, XGBoost) to produce final cross‑domain predictions. This setup helps improve generalization and detection robustness across distinct Arabic text domains.
+
 
 
 # Cross-Domain Stacked Ensemble Framework for AI-Generated Text Detection
