@@ -1,10 +1,5 @@
 # AraC2AIdet
-\documentclass{article}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\usepackage{amsmath}
 
-\begin{document}
 
 \begin{algorithm}[H]
 \caption{Cross-Domain Stacked Ensemble Framework for AI-Generated Text Detection}
@@ -73,4 +68,3 @@
 \end{algorithmic}
 \end{algorithm}
 
-\end{document}
