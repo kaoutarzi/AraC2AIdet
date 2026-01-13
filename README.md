@@ -6,8 +6,8 @@ This repository implements a **Cross‑Domain Stacked Ensemble Framework for AI�
 
 We evaluate cross‑domain performance using two public Arabic datasets from Hugging Face:
 
-- **Arabic Generated Abstracts** — a dataset of academic abstracts with both human and LLM‑generated versions, created as part of the research on stylometric analysis in Arabic text generation. 
-- **Arabic Generated Social Media Posts** — a dataset of social media posts and their polished/generated counterparts from multiple LLMs, designed to support detection and analysis of machine‑generated informal Arabic text. 
+- **[Arabic Generated Abstracts](https://huggingface.co/datasets/KFUPM-JRCAI/arabic-generated-abstracts)** — a dataset of academic abstracts with both human and LLM-generated versions.  
+- **[Arabic Generated Social Media Posts](https://huggingface.co/datasets/KFUPM-JRCAI/arabic-generated-social-media-posts)** — a dataset of social media posts and their LLM-generated counterparts.
 
 The framework works in two directions:
 
