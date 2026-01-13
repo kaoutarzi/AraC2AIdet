@@ -1,4 +1,18 @@
 # AraC2AIdet
+
+
+## Overview
+
+This algorithm implements a **cross-domain stacked ensemble framework** for detecting AI-generated text in Arabic datasets.  
+It combines multiple **pretrained base models** (AraBERT, AraELECTRA, DeBERTa, XLM-RoBERTa) and uses **meta-learners** (Logistic Regression, SVM, Random Forest, XGBoost) to improve detection performance across different domains.  
+
+The framework supports two directions:  
+1. **Social → Abstracts**: Train on social media data and test on academic abstracts.  
+2. **Abstracts → Social**: Train on academic abstracts and test on social media data.  
+
+By leveraging **K-fold cross-validation** and out-of-fold predictions from base models, the ensemble reduces overfitting and enhances generalization to unseen datasets.
+
+
 # Cross-Domain Stacked Ensemble Framework for AI-Generated Text Detection
 
 **Input:**  
