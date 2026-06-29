@@ -13,7 +13,7 @@ A cutting-edge machine learning framework that detects AI-generated Arabic text 
 
 ## 🎯 Overview
 
-AraC2AIdet addresses the critical challenge of detecting AI-generated content in Arabic across heterogeneous domains. Unlike conventional approaches that train and evaluate on identical domains, this framework is specifically designed to generalize across different writing styles—from academic abstracts to social media posts.
+AraC2AIdet addresses the critical challenge of detecting AI-generated content in Arabic across heterogeneous domains. Unlike conventional approaches that train and evaluate on identical domains, this framework is specifically designed to generalize across different writing styles from academic abstracts to social media posts.
 
 ### Key Innovation
 Our stacked ensemble architecture combines multiple transformer-based language models as base learners, with meta-learning to enhance cross-domain robustness and detection accuracy.
